@@ -14,14 +14,11 @@ int main(){
     printf("\n a,b,c="); scanf("%f %f %f",&a,&b,&c);
     if(a==0){//bx+c=0
         if(b!=0){// chac chan 1 nghiem
-            printf("x = %f",-c/b);
-            return 0;
+            printf("x = %f",-c/b);           
         }else if(c==0){// b=0 c=0
-            printf("Phuong trinh vo so nghiem");
-            return 0;
+            printf("Phuong trinh vo so nghiem");           
         }else{//b=0 c!=0
-            printf("Phuong trinh vo nghiem");
-            return 0;
+            printf("Phuong trinh vo nghiem");           
         }
     }else{//ax2+bx+c=0
         float delta=(b*b)-(4*a*c);
@@ -31,13 +28,9 @@ int main(){
             printf("x1 = x2 = %f", -b/(2*a));
         }else{// phương trình có 2 nghiệm phân biệt
             float x1 =(-b+sqrt(delta))/(2*a);
-            float x2 =(-b-sqrt(delta))/(2*a);
-            
+            float x2 =(-b-sqrt(delta))/(2*a);   
             printf("x1 = %f\n",x1);
             printf("x2 = %f\n",x2);
         }
     }
-
-    
-
 }

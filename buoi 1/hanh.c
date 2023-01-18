@@ -1,4 +1,6 @@
-/* Ex1: #include <stdio.h>
+//Ex1: #include <stdio.h>
+/*
+// Đây là bài của  hạnh. Hạnh 10 điểm
 int main() {
     printf("\nEnter the starting point:"); float start; scanf("%f", &start); 
     printf("\nEnter the ending point:"); float end; scanf("%f",&end); 

@@ -24,9 +24,7 @@ for i in range(len(ls)):
         start=i
         if ff[i+1:i+4]=="/di":
             ls[i-1]=ls[i-1]+" NGẮT"
-        continue
-    
-        
+        continue    
     if ls[i]==">" and act>0:
         end=i
         
