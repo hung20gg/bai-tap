@@ -18,3 +18,24 @@ int main() {
     return 0;
 }*/
 
+#include<stdio.h>
+#include<math.h>
+int c_at_depth(float depth){ //f(x)
+    float c=10*depth+20;
+    return c;
+}
+int to_fahrenheit(float c){
+    float f=1.8*c+32;
+    return f;
+}
+int main(){
+    float d;
+    //tinh do c
+    scanf("%f",&d);
+    float e=c_at_depth(d); //f(d)
+    float f=to_fahrenheit(e);
+    printf("%f\n",round(e));
+    printf("%f\n",round(f));
+    return 0;
+}
+
