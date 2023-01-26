@@ -1,0 +1,41 @@
+/*Ex1#include <stdio.h>
+#include <math.h> 
+int main() {
+    printf("Nhap so tien muon hang thang") ; float P; scanf("%f",&P);
+    printf("Nhap lai suat hang thang") ; float i; scanf("%f",&i); 
+    printf("Nhap so thang") ; float n; scanf("%f",&n); 
+    float tien; tien = (i*P) / (1-(1/pow(1+i,n))) ; 
+    printf("So tien phai tra hang thang:%f", tien);
+    return 0;
+}*/
+
+/*Ex2#include <stdio.h> 
+#include <math.h>
+int main() {
+    float depth,C,F; printf("Enter the depth") ; scanf("%f",&depth);
+    C = (10*depth) + 20 ; printf("Do C: %f", C); 
+    F = (1.8 * C) + 32 ; printf("Do F: %f", F); 
+    return 0;
+}*/
+
+#include<stdio.h>
+#include<math.h>
+int c_at_depth(float depth){ //f(x)
+    float c=10*depth+20;
+    return c;
+}
+int to_fahrenheit(float c){
+    float f=1.8*c+32;
+    return f;
+}
+int main(){
+    float d;
+    //tinh do c
+    scanf("%f",&d);
+    float e=c_at_depth(d); //f(d)
+    float f=to_fahrenheit(e);
+    printf("%f\n",round(e));
+    printf("%f\n",round(f));
+    return 0;
+}
+
