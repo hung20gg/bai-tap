@@ -5,12 +5,13 @@ int c_at_depth(float depth){ //f(x)
     return c;
 }
 int to_fahrenheit(float c){
-    float f=1.8*(float)c+32;
+    float f=1.8*c+32;
     printf("Do F %f\n",f);
     return f;
 }
+float d;
 int main(){
-    float d;
+    
     //tinh do c
     scanf("%f",&d);
     float e=c_at_depth(d); //f(d)
